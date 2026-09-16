@@ -106,3 +106,18 @@ footer button { border: 0; background: none; cursor: pointer; text-transform: in
   .lightbox figure { padding-block: 60px 26px; }
   footer { flex-direction: column; text-align: center; }
 }
+
+/* Gentle photo opening; system reduced-motion preference is respected. */
+@media (prefers-reduced-motion: no-preference) {
+  .lightbox[open] { animation: lightboxFadeIn 260ms ease-out both; }
+  .lightbox[open]::backdrop { animation: lightboxFadeIn 260ms ease-out both; }
+  .lightbox[open] img { animation: photoZoomIn 380ms cubic-bezier(.16, 1, .3, 1) both; transform-origin: center; }
+}
+@keyframes lightboxFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes photoZoomIn {
+  from { opacity: 0; transform: scale(.9); }
+  to { opacity: 1; transform: scale(1); }
+}
