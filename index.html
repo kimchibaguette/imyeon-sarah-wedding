@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The wedding of Imyeon and Sarah — Paris and Château de Sorel, August 2026." />
+  <meta name="theme-color" content="#151411" />
+  <title>Imyeon & Sarah — Our Wedding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23151411'/%3E%3Cpath d='M17 20v24M47 20v24M17 32h30' stroke='%23f6f2e9' stroke-width='3'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><span>IMYEON &amp; SARAH</span></div>
+
+  <header class="hero" id="home">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="monogram" href="#home" aria-label="Back to top">I <i>&amp;</i> S</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <div class="menu" id="menu">
+        <a href="#story">Our day</a>
+        <a href="#gallery">Photographs</a>
+        <a href="#thanks">Thank you</a>
+      </div>
+    </nav>
+
+    <img class="hero-image" id="heroImage" alt="Imyeon and Sarah on their wedding day" />
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Paris · 20 &amp; 22 August 2026</p>
+      <h1><span>Imyeon</span><em>&amp;</em><span>Sarah</span></h1>
+      <p class="hero-caption">A summer celebration in France</p>
+    </div>
+    <a class="scroll-cue" href="#story"><span>Discover</span><i></i></a>
+  </header>
+
+  <main>
+    <section class="intro" id="story">
+      <p class="section-number">01 — Our day</p>
+      <div>
+        <h2>Two families,<br />one beautiful day.</h2>
+        <p>From Paris to the gardens of Château de Sorel, we celebrated ten years together surrounded by the people we love most.</p>
+      </div>
+    </section>
+
+    <section class="featured" aria-label="Featured photograph">
+      <div class="featured-image-wrap">
+        <img id="featuredImage" alt="A quiet moment from the wedding" loading="lazy" />
+      </div>
+      <p>Château de Sorel <span>22 · 08 · 2026</span></p>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <header class="gallery-header">
+        <div>
+          <p class="section-number">02 — Photographs</p>
+          <h2>Scenes from<br />the celebration</h2>
+        </div>
+        <div class="filters" id="filters" aria-label="Filter photographs"></div>
+      </header>
+      <div class="gallery" id="galleryGrid" aria-live="polite"></div>
+      <button class="load-more" id="loadMore" type="button">View more photographs <span>+</span></button>
+    </section>
+
+    <section class="quote" id="thanks">
+      <p class="section-number">03 — Thank you</p>
+      <blockquote>“Where you go, I will go.<br />Where you stay, I will stay.”</blockquote>
+      <p class="reference">Ruth 1:16</p>
+      <div class="thanks-copy">
+        <p>Thank you for sharing this unforgettable chapter with us.</p>
+        <p class="ko">우리의 소중한 순간을 함께해 주셔서 감사합니다.</p>
+        <p class="fr">Merci d’avoir partagé avec nous ce moment inoubliable.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="monogram footer-mark" href="#home">I <i>&amp;</i> S</a>
+    <p>Paris · Château de Sorel · 2026</p>
+    <button type="button" id="backToTop">Back to top ↑</button>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close photograph">×</button>
+    <button class="lightbox-nav previous" type="button" aria-label="Previous photograph">←</button>
+    <figure>
+      <img id="lightboxImage" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" type="button" aria-label="Next photograph">→</button>
+  </dialog>
+
+  <script src="photos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
