@@ -17,7 +17,6 @@
     const photo = photos[index];
     enlarged.src = photo.src;
     enlarged.alt = photo.alt || photo.caption || `Wedding photograph ${index + 1}`;
-    document.querySelector('#counter').textContent = `${index + 1} / ${photos.length}`;
   }
   function move(step) { if (!photos.length) return; index = (index + step + photos.length) % photos.length; show(); }
   const buttons = photos.map((photo, i) => {

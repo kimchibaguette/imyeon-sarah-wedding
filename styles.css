@@ -22,9 +22,9 @@ dialog .close{position:absolute;right:14px;top:10px;z-index:2}dialog .previous,d
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes photoOpen{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
 
 /* Beau Rivage title and compact, uncropped masonry gallery. */
-h1{font-family:'Beau Rivage',cursive;font-size:clamp(58px,10vw,160px);font-weight:400;line-height:1.45;letter-spacing:0;white-space:normal;display:flex;align-items:baseline;justify-content:center;gap:.17em;padding:12px 16px;margin:0}
+h1{font-family:'Italiana',Georgia,serif;font-size:clamp(58px,10vw,160px);font-weight:400;line-height:1.45;letter-spacing:0;white-space:normal;display:flex;align-items:baseline;justify-content:center;gap:.17em;padding:12px 16px;margin:0}
 h1 span{white-space:nowrap}
-h1 .amp{font-family:'Cormorant Garamond',Georgia,serif;font-size:.6em;line-height:1;font-weight:400}
+h1 .and{font-family:inherit;font-size:.55em;line-height:1;font-weight:400}
 .gallery{display:block;columns:10;column-gap:5px}
 .photo{display:block;break-inside:avoid;page-break-inside:avoid;margin:0 0 5px;padding:0;overflow:hidden;border-radius:2px}
 .photo img{width:100%;height:auto;object-fit:contain}
@@ -44,3 +44,7 @@ main{padding-top:16px}
 @media(max-width:1099px){.gallery{grid-template-columns:repeat(6,minmax(0,1fr))}}
 @media(max-width:799px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:599px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Italiana title sized to fit phone widths with the full word and. */
+h1{font-size:clamp(42px,8.8vw,150px);line-height:1.25}
+@media(max-width:599px){h1{font-size:clamp(30px,9.2vw,55px);gap:.16em;padding:8px 0}}
