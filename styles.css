@@ -20,3 +20,16 @@ dialog .close{position:absolute;right:14px;top:10px;z-index:2}dialog .previous,d
 @media(max-width:700px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.date{font-size:12px;padding:12px 0 20px;margin-top:20px}.cover-frame{height:62svh;min-height:330px;max-height:680px}h1{font-size:clamp(30px,9.5vw,66px)}dialog[open]{grid-template-columns:1fr}dialog figure{grid-column:1;grid-row:1;padding-inline:10px}dialog .previous,dialog .next{position:absolute;bottom:8px}dialog .previous{left:12px}dialog .next{right:12px}}
 @media(prefers-reduced-motion:no-preference){dialog[open],dialog[open]::backdrop{animation:fadeIn 180ms ease-out both}dialog[open] img{animation:photoOpen 280ms ease-out both}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes photoOpen{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
+
+/* Beau Rivage title and compact, uncropped masonry gallery. */
+h1{font-family:'Beau Rivage',cursive;font-size:clamp(58px,10vw,160px);font-weight:400;line-height:1.45;letter-spacing:0;white-space:normal;display:flex;align-items:baseline;justify-content:center;gap:.17em;padding:12px 16px;margin:0}
+h1 span{white-space:nowrap}
+h1 .amp{font-family:'Cormorant Garamond',Georgia,serif;font-size:.6em;line-height:1;font-weight:400}
+.gallery{display:block;columns:10;column-gap:5px}
+.photo{display:block;break-inside:avoid;page-break-inside:avoid;margin:0 0 5px;padding:0;overflow:hidden;border-radius:2px}
+.photo img{width:100%;height:auto;object-fit:contain}
+main{padding-top:16px}
+@media(max-width:1399px){.gallery{columns:8}}
+@media(max-width:1099px){.gallery{columns:6}}
+@media(max-width:799px){.gallery{columns:4}}
+@media(max-width:599px){.gallery{columns:2;column-gap:5px}h1{font-size:clamp(40px,11vw,65px);padding:8px 0;gap:.12em}main{padding-top:10px}}
