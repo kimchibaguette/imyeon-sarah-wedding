@@ -54,7 +54,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-27_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -89,7 +89,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-41_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -180,7 +180,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-84_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -201,7 +201,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-95_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -250,7 +250,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-124_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -278,7 +278,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-156_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -306,7 +306,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-169_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -327,7 +327,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-186_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -362,7 +362,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-214_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -432,7 +432,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-246_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -474,7 +474,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-280_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -516,7 +516,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-297_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -544,7 +544,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-303_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1800",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -565,7 +565,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-312_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -635,7 +635,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-364_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -698,7 +698,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-402_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -754,7 +754,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-426_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -789,7 +789,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-445_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -817,7 +817,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-468_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1800",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -880,14 +880,14 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-513_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
     "caption": "Wedding photograph",
     "src": "photos/Photo-517_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -936,7 +936,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-535_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -957,7 +957,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-553_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1006,7 +1006,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-584_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1020,7 +1020,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-592_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1076,7 +1076,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-638_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1160,7 +1160,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-697_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1181,7 +1181,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-706_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1237,7 +1237,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-736_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1258,7 +1258,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-753_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1307,7 +1307,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-775_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1321,7 +1321,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-788_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1349,7 +1349,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-802_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1391,7 +1391,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-821_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1433,7 +1433,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-851_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1468,7 +1468,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-871-r_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1524,7 +1524,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-903_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1545,7 +1545,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-912_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1559,7 +1559,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-914_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1615,14 +1615,14 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-940_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
     "caption": "Wedding photograph",
     "src": "photos/Photo-943_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1800",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1636,7 +1636,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-950_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1727,7 +1727,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-991_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1741,7 +1741,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-999_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1769,7 +1769,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1012_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1804,7 +1804,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1031_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1825,7 +1825,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1057_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1881,7 +1881,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1138_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1895,7 +1895,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1143_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1923,7 +1923,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1150_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1944,7 +1944,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1157_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1965,7 +1965,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1173_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -1993,14 +1993,14 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1184_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
     "caption": "Wedding photograph",
     "src": "photos/Photo-1186_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2035,7 +2035,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1204_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2084,7 +2084,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1229_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2105,14 +2105,14 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1240_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
     "caption": "Wedding photograph",
     "src": "photos/Photo-1241_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2133,7 +2133,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1251_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2161,7 +2161,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1265_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2182,7 +2182,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1271_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2210,7 +2210,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1279_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2224,7 +2224,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1284_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2280,7 +2280,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1312_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2294,7 +2294,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1316_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2329,7 +2329,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1333_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2371,7 +2371,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1363_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2385,7 +2385,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1372_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2413,7 +2413,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1396_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2441,7 +2441,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1406_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2455,7 +2455,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1418_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2476,7 +2476,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1431_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2497,7 +2497,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1441_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2525,7 +2525,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1460_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2539,7 +2539,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1466_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2574,7 +2574,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1487_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2616,7 +2616,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1518_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2672,7 +2672,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1551_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2735,7 +2735,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1581_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2798,7 +2798,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1607_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2840,7 +2840,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1628_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2924,7 +2924,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1667_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2945,7 +2945,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1677_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -2980,7 +2980,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1694_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3001,7 +3001,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1703_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3043,7 +3043,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1721_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3071,7 +3071,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1734_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3092,7 +3092,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1745_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "2400 / 1600",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3141,7 +3141,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1763_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3169,7 +3169,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1775_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3204,7 +3204,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1787_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3225,7 +3225,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1793_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1800 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3295,7 +3295,7 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1831_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   },
   {
     "category": "All",
@@ -3365,6 +3365,6 @@ window.WEDDING_PHOTOS = [
     "caption": "Wedding photograph",
     "src": "photos/Photo-1858_%EA%B2%B0%EA%B3%BC.jpg",
     "ratio": "1600 / 2400",
-    "featured": true
+    "featured": false
   }
 ];
