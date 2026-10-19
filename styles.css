@@ -48,3 +48,12 @@ main{padding-top:16px}
 /* Italiana title sized to fit phone widths with the full word and. */
 h1{font-size:clamp(42px,8.8vw,150px);line-height:1.25}
 @media(max-width:599px){h1{font-size:clamp(30px,9.2vw,55px);gap:.16em;padding:8px 0}}
+
+/* Selected photos span two columns; forward-only source order remains intact. */
+.photo.featured{grid-column:span 2}
+.photo-frame{display:block;overflow:hidden;border-radius:2px}
+.photo .photo-frame img{border-radius:0;transform:scale(1)}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .photo .photo-frame img{transition:transform 300ms ease-out}
+  .photo:hover .photo-frame img{transform:scale(1.035)}
+}

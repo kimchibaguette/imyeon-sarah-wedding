@@ -20,7 +20,7 @@
   }
   function move(step) { if (!photos.length) return; index = (index + step + photos.length) % photos.length; show(); }
   const buttons = photos.map((photo, i) => {
-    const button = document.createElement('button'); button.className = 'photo'; button.type = 'button';
+    const button = document.createElement('button'); button.className = 'photo'; button.classList.toggle('featured', photo.featured === true); button.type = 'button';
     button.setAttribute('aria-label', `Open photograph ${i + 1}`);
     const img = document.createElement('img'); img.src = photo.src; img.alt = photo.alt || photo.caption || `Wedding photograph ${i + 1}`;
     img.loading = 'lazy'; img.decoding = 'async';
@@ -29,7 +29,7 @@
     if (ratio.length === 2 && ratio.every(n => Number.isFinite(n) && n > 0)) img.style.aspectRatio = `${ratio[0]} / ${ratio[1]}`;
     // Use the image's real proportions once available, even for old manually entered ratios.
     img.addEventListener('load', () => { img.style.aspectRatio = `${img.naturalWidth} / ${img.naturalHeight}`; button.classList.toggle('portrait', img.naturalHeight > img.naturalWidth); });
-    button.append(img);
+    const frame = document.createElement('span'); frame.className = 'photo-frame'; frame.append(img); button.append(frame);
     button.addEventListener('click', () => { index = i; opener = button; show(); dialog.showModal(); document.body.classList.add('viewer-open'); });
     return button;
   });
@@ -38,11 +38,11 @@
   // then left-to-right. Do not use grid-auto-flow:dense: it reorders photos.
   function sizeTile(button) {
     const img = button.querySelector('img');
-    const height = img.getBoundingClientRect().height;
+    const height = img.offsetHeight;
     if (height > 0) button.style.gridRowEnd = `span ${Math.ceil(height + 5)}`;
   }
   const tileObserver = new ResizeObserver(entries => {
-    entries.forEach(entry => sizeTile(entry.target.parentElement));
+    entries.forEach(entry => sizeTile(entry.target.closest('.photo')));
   });
   buttons.forEach(button => {
     const img = button.querySelector('img');

@@ -1,14 +1,18 @@
 <!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>웨딩 사진 목록 만들기</title>
 <style>body{font:16px/1.7 system-ui,sans-serif;max-width:1000px;margin:50px auto;padding:0 24px;background:#f3f0e8;color:#181713}h1{font-size:32px}button,input{font:inherit}button{padding:12px 22px;background:#181713;color:white;border:0;border-radius:4px;cursor:pointer}button:disabled{opacity:.4;cursor:default}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px}article{background:white;padding:12px;overflow-wrap:anywhere}img{width:100%;height:160px;object-fit:contain;background:#eee}label{display:block}small{display:block}#status{white-space:pre-line}a{color:inherit}.bar{position:sticky;top:0;background:#f3f0e8;padding:16px 0;border-bottom:1px solid #ccc;margin-bottom:24px}</style>
-<h1>웨딩 사진 목록 만들기</h1><p>① <b>photos 폴더 전체</b> 선택 → ② 커버 사진 선택 → ③ 목록 저장</p>
-<p><b>photos 폴더에 사진을 넣어주세요.</b> 기존 하위 폴더가 있어도 모두 읽습니다. 사진은 이 컴퓨터에서만 처리됩니다. JPG·PNG·WebP·AVIF를 지원합니다.</p>
+<h1>웨딩 사진 목록 만들기</h1><p>① <b>photos 폴더 전체</b> 선택 → ② 커버·크게 보여줄 사진 선택 → ③ 목록 저장</p>
+<p><b>이 도구를 기존 photos.js와 같은 폴더에서 열어주세요.</b> 기존 목록의 순서·커버·크게 표시 설정을 읽습니다. 사진 추가 시 새 사진은 목록 끝에 붙습니다.</p><p><b>photos 폴더에 사진을 넣어주세요.</b> 기존 하위 폴더가 있어도 모두 읽습니다. 사진은 이 컴퓨터에서만 처리됩니다. JPG·PNG·WebP·AVIF를 지원합니다.</p>
 <label>사진 폴더 선택 <input id="folder" type="file" webkitdirectory multiple></label>
 <p id="status" role="status">사진을 추가할 때마다 전체 photos 폴더를 다시 선택하세요. 기존 목록을 대체하는 파일이 만들어집니다.</p>
 <div class="bar"><button id="save" disabled>photos.js 다운로드</button><p>다운로드한 파일로 사이트 폴더의 기존 <b>photos.js</b>를 교체하세요. 사진 폴더와 새 목록은 GitHub에 별도로 올려야 합니다.</p></div>
 <div id="grid" class="grid"></div>
+<script src="photos.js"></script>
 <script>
 const folder=document.querySelector('#folder'),grid=document.querySelector('#grid'),status=document.querySelector('#status'),save=document.querySelector('#save');
 const categories={ceremony:'Ceremony',chateau:'Château',family:'Family & Friends'};
+const previous=Array.isArray(window.WEDDING_PHOTOS)?window.WEDDING_PHOTOS:[];
+const priorMap=new Map(previous.map((p,i)=>[p.src,{photo:p,order:i}]));
+const previousCover=window.WEDDING_COVER;
 let records=[],cover='',urls=[],generation=0;
 function inspect(file){return new Promise(resolve=>{const url=URL.createObjectURL(file),img=new Image();img.onload=()=>resolve({url,w:img.naturalWidth,h:img.naturalHeight});img.onerror=()=>{URL.revokeObjectURL(url);resolve(null)};img.src=url})}
 folder.addEventListener('change',async()=>{
@@ -21,21 +25,29 @@ folder.addEventListener('change',async()=>{
   if(!/\.(jpe?g|png|webp|avif)$/i.test(file.name)){skipped++;continue}
   const info=await inspect(file);if(run!==generation){if(info)URL.revokeObjectURL(info.url);return}if(!info){skipped++;continue}
   urls.push(info.url);
-  records.push({src:parts.map(encodeURIComponent).join('/'),category:categories[parts[1]] || 'All',caption:'Wedding photograph',ratio:info.w+' / '+info.h,url:info.url,name:file.webkitRelativePath});
+  const encoded=parts.map(encodeURIComponent).join('/');
+  const old=priorMap.get(encoded)||priorMap.get(file.webkitRelativePath);
+  records.push({category:categories[parts[1]] || 'All',caption:'Wedding photograph',...(old?old.photo:{}),src:old?old.photo.src:encoded,ratio:info.w+' / '+info.h,featured:old?.photo.featured===true,url:info.url,name:file.webkitRelativePath});
  }
  if(!records.length){status.textContent='지원하는 사진이 없습니다. photos 안에 JPG·PNG·WebP·AVIF 사진이 있는지 확인해 주세요.';return}
- cover=records[0].src;
+ records.sort((a,b)=>(priorMap.get(a.src)?.order??Infinity)-(priorMap.get(b.src)?.order??Infinity));
+ cover=records.some(r=>r.src===previousCover)?previousCover:records[0].src;
  for(const r of records){
   const card=document.createElement('article'),img=document.createElement('img');img.src=r.url;img.alt=r.name;img.loading='lazy';card.append(img);
   const text=document.createElement('small');text.textContent=r.name;card.append(text);
   for(const [group,title] of [['cover','메인 커버']]){
    const label=document.createElement('label'),radio=document.createElement('input');radio.type='radio';radio.name=group;radio.checked=r.src===cover;radio.onchange=()=>{cover=r.src};label.append(radio,document.createTextNode(' '+title));card.append(label)
-  }grid.append(card)
+  }
+  const featuredLabel=document.createElement('label'),featuredInput=document.createElement('input');
+  featuredInput.type='checkbox';featuredInput.checked=r.featured;
+  featuredInput.onchange=()=>{r.featured=featuredInput.checked};
+  featuredLabel.append(featuredInput,document.createTextNode(' 크게 표시 (2열 너비)'));card.append(featuredLabel);
+  grid.append(card)
  }
- status.textContent=records.length+'장 준비 완료. 폴더 경로와 파일명 순서로 정렬하고 사진 비율을 자동으로 읽었습니다.'+(skipped?'\n지원하지 않는 형식·폴더 또는 읽을 수 없는 파일 '+skipped+'개는 제외했습니다.':'');save.disabled=false;
+ status.textContent=records.length+'장 준비 완료. '+(previous.length?'기존 목록의 순서를 유지하고 새 사진은 뒤에 추가했습니다.':'기존 photos.js를 읽지 못했거나 목록이 비어 있어 파일명 순서로 정렬했습니다.')+' 크게 표시할 사진을 체크하세요.'+(skipped?'\n지원하지 않는 형식·폴더 또는 읽을 수 없는 파일 '+skipped+'개는 제외했습니다.':'');save.disabled=false;
 });
 save.addEventListener('click',()=>{
- const clean=records.map(({src,category,caption,ratio})=>({src,category,caption,ratio}));
+ const clean=records.map(({url,name,...photo})=>photo);
  const text='window.WEDDING_COVER = '+JSON.stringify(cover)+';\nwindow.WEDDING_PHOTOS = '+JSON.stringify(clean,null,2)+';\n';
  const url=URL.createObjectURL(new Blob([text],{type:'text/javascript;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download='photos.js';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
