@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Imyeon & Sarah — France, 22 August 2026">
+<meta name="theme-color" content="#ffffff">
+<title>Imyeon & Sarah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='white'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='%2320211f' font-family='Arial' font-size='42'%3E%26%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=studio-20261019">
+</head>
+<body>
+<div class="site">
+<header class="hero">
+  <h1>Imyeon &amp; Sarah</h1>
+  <p class="date"><span>France</span><span>22 August 2026</span></p>
+  <div class="cover-frame"><img id="heroImage" alt="" fetchpriority="high"></div>
+</header>
+<main id="gallery" aria-label="Wedding photographs">
+  <div id="galleryGrid" class="gallery"></div>
+  <p id="empty" hidden>No photographs yet.</p>
+</main>
+</div>
+<dialog id="lightbox" aria-label="Photograph viewer">
+  <button type="button" class="close" aria-label="Close photograph" autofocus>×</button>
+  <button type="button" class="previous" aria-label="Previous photograph">‹</button>
+  <figure><img id="lightboxImage" alt=""><figcaption id="counter" aria-live="polite"></figcaption></figure>
+  <button type="button" class="next" aria-label="Next photograph">›</button>
+</dialog>
+<script src="photos.js"></script>
+<script src="app.js?v=studio-20261019"></script>
+</body>
+</html>
