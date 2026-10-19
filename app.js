@@ -25,6 +25,7 @@
     button.setAttribute('aria-label', `Open photograph ${i + 1}`);
     const img = document.createElement('img'); img.src = photo.src; img.alt = photo.alt || photo.caption || `Wedding photograph ${i + 1}`;
     img.loading = 'lazy'; img.decoding = 'async';
+    img.style.aspectRatio = '3 / 2';
     const ratio = String(photo.ratio || '').split('/').map(Number);
     if (ratio.length === 2 && ratio.every(n => Number.isFinite(n) && n > 0)) img.style.aspectRatio = `${ratio[0]} / ${ratio[1]}`;
     // Use the image's real proportions once available, even for old manually entered ratios.
@@ -34,6 +35,21 @@
     return button;
   });
   grid.replaceChildren(...buttons);
+  // Grid's forward-only placement cursor preserves source order by top edge,
+  // then left-to-right. Do not use grid-auto-flow:dense: it reorders photos.
+  function sizeTile(button) {
+    const img = button.querySelector('img');
+    const height = img.getBoundingClientRect().height;
+    if (height > 0) button.style.gridRowEnd = `span ${Math.ceil(height + 5)}`;
+  }
+  const tileObserver = new ResizeObserver(entries => {
+    entries.forEach(entry => sizeTile(entry.target.parentElement));
+  });
+  buttons.forEach(button => {
+    const img = button.querySelector('img');
+    tileObserver.observe(img);
+    sizeTile(button);
+  });
   document.querySelector('.close').onclick = () => dialog.close();
   document.querySelector('.previous').onclick = () => move(-1);
   document.querySelector('.next').onclick = () => move(1);

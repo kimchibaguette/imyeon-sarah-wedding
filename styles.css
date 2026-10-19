@@ -33,3 +33,14 @@ main{padding-top:16px}
 @media(max-width:1099px){.gallery{columns:6}}
 @media(max-width:799px){.gallery{columns:4}}
 @media(max-width:599px){.gallery{columns:2;column-gap:5px}h1{font-size:clamp(40px,11vw,65px);padding:8px 0;gap:.12em}main{padding-top:10px}}
+
+/* Natural cover and source-ordered masonry (never dense/backfilled). */
+.cover-frame{height:auto;min-height:0;max-height:none;aspect-ratio:3 / 2}
+#heroImage{object-fit:contain;object-position:center}
+.gallery{display:grid;columns:auto;grid-template-columns:repeat(10,minmax(0,1fr));grid-auto-rows:1px;grid-auto-flow:row;column-gap:5px;row-gap:0;align-items:start}
+.photo{align-self:start;margin:0;padding:0 0 5px;border-radius:0}
+.photo img{border-radius:2px}
+@media(max-width:1399px){.gallery{grid-template-columns:repeat(8,minmax(0,1fr))}}
+@media(max-width:1099px){.gallery{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(max-width:799px){.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:599px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
