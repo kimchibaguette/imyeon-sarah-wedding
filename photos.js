@@ -1,4 +1,4 @@
-window.WEDDING_COVER = "photos/Photo-4.jpg";
+window.WEDDING_COVER = "photos/Photo-508.jpg";
 window.WEDDING_PHOTOS = [
   {
     "category": "All",
